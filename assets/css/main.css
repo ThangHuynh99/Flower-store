@@ -1,0 +1,23 @@
+:root {
+    
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    line-height: 1.8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #666666;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}

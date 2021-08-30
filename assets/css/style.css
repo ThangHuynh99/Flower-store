@@ -1,0 +1,145 @@
+.header {
+    padding: 15px 0;
+    border-bottom: 1px solid lavender;
+}
+
+.header__main {
+    max-height: 100px;
+}
+
+.header__main-logo {
+}
+
+.header__main-site-logo {
+}
+
+.header__main-site-logo img {
+    width: 120px;
+    height: 100px;
+}
+
+.row .header__main-search {
+    display: flex;
+}
+
+.header__main-contact {
+    width: 20%;
+    height: 100px;
+    display: flex;
+    margin-right: 40px;
+}
+
+.header__main-contact-icon {
+    width: 22;
+    height: 20px;
+    line-height: 100px;
+    margin-right: 20px;
+}
+
+.header__main-contact-info {
+    flex: 1;
+    margin: auto 0;
+}
+
+.header__main-contact-name {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    margin: 4px 0;
+}
+
+.header__main-contact-number {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin: 8px 0;
+}
+
+.header__main-contact-number:hover {
+    color: violet;
+    cursor: pointer;
+}
+
+.header__main-search-input {
+    flex: 1;
+    line-height: 100px;
+}
+
+.header__main-search-input input {
+    width: 500px;
+    height: 40px;
+    border: 2px solid lavender;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-radius: 20px;
+}
+
+.header__main-search-input input:focus {
+    outline: none;
+    border-color: rgb(247, 212, 247);
+}
+
+.header__main-search-input {
+    position: relative;
+}
+
+.header__main-search-btn {
+    position: absolute;
+    border: none;
+    background-color: white;
+    font-size: 1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 35px;
+}
+
+
+/* cart */
+
+.row .header__main-cart {
+    display: flex;
+}
+
+.header__main-cart-icon {
+    padding-left: 30px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.header__main-cart-icon-bag {
+    font-size: 2rem;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.header__main-cart-info {
+    margin: auto 0;
+    padding-left: 10px;
+}
+
+.header__main-cart-info-name {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.header__main-cart-info-price {
+    font-size: 1.2rem;
+    color: #e55472;
+    font-weight: 600;
+}
+
+.header__main-cart-quantity {
+    position: absolute;
+    font-size: 1.2rem;
+    color: white;
+    width: 20px;
+    height: 20px;
+    background-color: #e55472;
+    line-height: 20px;
+    padding-left: 7px;
+    font-weight: 600;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-100%);
+    right: 6px;
+}
