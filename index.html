@@ -6,63 +6,136 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./assets/fonts/Montserrat.css" />
-        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css"/>
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css" />
         <link rel="stylesheet" href="./assets/css/main.css" />
         <link href="./assets/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
         <div class="header">
-            <div class="header__main grid wide">
-                <div class="row">
-                    <div class="header__main-logo col l-2-4">
-                        <div class="header__main-site-logo">
-                            <img src="./assets/img/logo1.jpg" alt="shop logo">
-                        </div>
-                    </div>
-
-                    <div class="header__main-search col l-2-3">
-                        <div class="header__main-contact">
-                            <div class="header__main-contact-icon">
-                                <i class="fas fa-phone-alt fa-2x "></i>
-                            </div>
-
-                            <div class="header__main-contact-info">
-                                <h6 class="header__main-contact-name">PHONE</h6>
-                                <p class="header__main-contact-number">
-                                    +84 935 217 297
-                                </p>
+            <div class="header__main-wrap">
+                <div class="header__main grid wide">
+                    <div class="row">
+                        <div class="header__main-logo col l-2 m-6">
+                            <div class="header__main-site-logo">
+                                <img src="./assets/img/logo1.jpg" alt="shop logo" />
                             </div>
                         </div>
 
-                        <div class="header__main-search-input">
-                            <input type="text" placeholder="Search here...">
-                            <button class="header__main-search-btn">
-                                <i class="header__main-search-btn-icon fas fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
+                        <div class="header__main-search col l-8 m-0">
+                            <div class="header__main-contact">
+                                <div class="header__main-contact-icon">
+                                    <i class="fas fa-phone-alt fa-2x"></i>
+                                </div>
 
-                    <div class="header__main-cart col l-2-4">
-                        <div class="header__main-cart-icon">
-                            <i class="fas fa-shopping-bag header__main-cart-icon-bag"></i>
-                            <span class="header__main-cart-quantity">2</span>
+                                <div class="header__main-contact-info">
+                                    <h6 class="header__main-contact-name">PHONE</h6>
+                                    <p class="header__main-contact-number">+84 935 217 297</p>
+                                </div>
+                            </div>
+
+                            <div class="header__main-search-input">
+                                <input type="text" placeholder="Search here..." />
+                                <button class="header__main-search-btn">
+                                    <i class="header__main-search-btn-icon fas fa-search"></i>
+                                </button>
+                            </div>
                         </div>
 
-                        <div class="header__main-cart-info">
-                            <h6 class="header__main-cart-info-name">YOUR CART</h6>
-                            <span class="header__main-cart-info-price">$89.25</span>
+                        <div class="header__main-cart col l-2 m-6">
+                            <div class="header__main-cart-icon">
+                                <i class="fas fa-shopping-bag header__main-cart-icon-bag"></i>
+                                <span class="header__main-cart-quantity">2</span>
+                            </div>
+
+                            <div class="header__main-cart-info">
+                                <h6 class="header__main-cart-info-name">YOUR CART</h6>
+                                <span class="header__main-cart-info-price">$89.25</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="header__category grid wide">
+                <div class="row">
+                    <div class="col l-o-3 l-6 m-0 c-0">
+                        <ul class="header__category-list">
+                            <li class="header__category-item">
+                                <a href="#">home</a>
+                            </li>
 
-            <div class="header__category"></div>
+                            <li class="header__category-item">
+                                <a href="#">pages</a>
+                            </li>
+
+                            <li class="header__category-item">
+                                <a href="#">shop</a>
+                            </li>
+
+                            <li class="header__category-item">
+                                <a href="#">portfolio</a>
+                            </li>
+
+                            <li class="header__category-item">
+                                <a href="#">news</a>
+                            </li>
+
+                            <li class="header__category-item">
+                                <a href="#">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="slider"></div>
+        <div class="slider">
+            <div class="slider-info grid wide">
+                <div class="row slider-info-wrap">
+                    <div class="col l-12 m-12 c-12">
+                        <h1 class="slider-info-title">Fresh Flower</h1>
+                        <h6 class="slider-info-sub-title">Natural & Beautiful Flower Here</h6>
+                        <p class="slider-info-brief">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <div class="slider-info-btn">
+                            <button>
+                                <a href="">Shop now</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="main"></div>
+        <div class="main">
+            <div class="banner grid wide">
+                <div class="row">
+                    <h1 class="banner-title col l-12">Offer for you!</h1>
+                </div>
+
+                <div class="row banner-list">
+                    <div class="col l-4 m-4 c-6">
+                        <div class="banner-item">
+                            <img src="./assets/img/offer1.jpg" alt="-30% offer" class="banner-img" />
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-4 c-6">
+                        <div class="banner-item">
+                            <img src="./assets/img/offer2.jpg" alt="-30% offer" class="banner-img" />
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-4 c-6">
+                        <div class="banner-item">
+                            <img src="./assets/img/offer3.jpg" alt="-30% offer" class="banner-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="footer"></div>
     </body>
