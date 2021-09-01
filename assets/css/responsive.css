@@ -1,12 +1,60 @@
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    /* slider */
+    .slider-info {
+        bottom: 120px;
+    }
+
+    .slider-info-wrap {
+        padding-left: 25px;
+    }
+}
+
 /* Mobile and Tablet */
 @media (max-width: 1023px) {
+   
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
     /* slider */
     .slider-info {
-        bottom: 400px;
+        bottom: 60px;
+    }
+
+    .slider-info-wrap {
+        padding-left: 25px;
+    }
+
+    .slider-info-title {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .slider-info-sub-title {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .slider-info-sub-title::before {
+        width: 80px;
+    }
+
+    .slider-info-brief {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        max-width: 350px;
+    }
+
+    .slider-info-btn button {
+        width: 140px;
+        height: 50px;
+    }
+
+    .slider-info-btn button a {
+        font-size: 1.4rem;
+        padding: 0;
+        margin: auto 0;
     }
 }
 
@@ -14,5 +62,49 @@
 @media (max-width: 739px) {
     .slider-info {
         bottom: 200px;
+    }
+
+    /* slider */
+    .slider-info {
+        bottom: 40px;
+    }
+
+    .slider-info-wrap {
+        padding-left: 20px;
+    }
+
+    .slider-info-title {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .slider-info-sub-title {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+
+    .slider-info-sub-title::before {
+        width: 80px;
+    }
+
+    .slider-info-btn button {
+        width: 100px;
+        height: 40px;
+    }
+
+    .slider-info-btn button a {
+        font-size: 1.4rem;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    /* banner */
+    .banner-list {
+        padding: 0 8px;
+    }
+
+    .banner-title {
+        font-size: 3rem;
+        line-height: 3rem;
     }
 }

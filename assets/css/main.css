@@ -16,6 +16,9 @@ html {
     color: #666666;
 }
 
+.main {
+    overflow: hidden;
+}
 
 body {
     margin: 0px;
