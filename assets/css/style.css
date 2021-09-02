@@ -354,15 +354,17 @@ body {
 /* badge */
 .new__product-badge {
     position: absolute;
-    height: 50px;
+    height: 0px;
     width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     top: calc(100% - 50px);
-    visibility: hidden;
+    opacity: 0;
     background-color: #666;
+    opacity: 0;
+    transition: 0.4s;
 }
 
 .new__product-badge-item {
@@ -389,20 +391,9 @@ body {
 }
 
 .new__product-item:hover .new__product-badge {
-    visibility: visible;
-    animation: badge 0.4s linear;
-}
-
-@keyframes badge {
-    from {
-        opacity: 0.5;
-        height: 0px;
-    }
-
-    to {
-        opacity: 1;
-        height: 50px;
-    }
+    opacity: 1;
+    height: 50px;
+    animation: .5s ease-in;
 }
 
 .new__product-item-info {
@@ -441,7 +432,6 @@ body {
     display: inline-block;
     font-weight: 800;
 }
-
 
 /* latest news */
 .latest__news-latest-info {
@@ -489,7 +479,6 @@ body {
 
 .brand {
     background-color: #f9f9f9;
-
 }
 
 .brand_list {
@@ -503,11 +492,119 @@ body {
     display: flex;
     justify-content: center;
     transition: all 1s ease 0s;
+    transition: .5s;
 }
 
-.brand-item:hover img{
+.brand-item:hover img {
     cursor: pointer;
     -webkit-transform: scale(1.15);
     transform: scale(1.15);
     -webkit-font-smoothing: antialiased;
+    transition: .5s;
+}
+
+/* footer */
+.footer {
+    background-color: #272829;
+}
+
+.footer_area {
+    padding-top: 95px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #666;
+}
+
+.footer-header {
+    color: white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+}
+
+.footer-menu-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 60px;
+}
+
+.footer-menu-item {
+    display: block;
+}
+
+.footer-menu-item .footer-menu-link {
+    display: block;
+    color: #999;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 0;
+    transition: .5s;
+}
+
+.footer-menu-item .footer-menu-link::before {
+    content: '//';
+    margin-left: -20px;
+    margin-right: 10px;
+    position: absolute;
+    color: #e55472;
+    opacity: 0;
+    
+    transition: 0.5s;
+}
+
+.footer-menu-item:hover .footer-menu-link {
+    padding-left: 20px;
+    color: #e55472;
+    transition: 0.5s;
+}
+
+.footer-menu-item:hover .footer-menu-link::before {
+    opacity: 1;
+    display: block;
+    transition: 0.5s;
+}
+
+.footer_shop-info {
+    color: #999;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.footer_address {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer_address-item {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: #999;
+}
+
+.footer_address-item i {
+    margin-right: 10px;
+    color: #666;
+    font-size: 1.4rem;
+}
+
+.footer_address-item_light:hover {
+    cursor: pointer;
+    color: #e55472;
+}
+
+.footer_author-name {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.footer_author-icon {
+    line-height: 44px;
+}
+
+.footer_author-icon i {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: #666;
 }
