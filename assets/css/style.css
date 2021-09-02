@@ -295,6 +295,7 @@ body {
 }
 
 .new__product-topic {
+    margin-top: 20px;
     margin-bottom: 80px;
 }
 
@@ -439,4 +440,74 @@ body {
 .new__product-item-new-price {
     display: inline-block;
     font-weight: 800;
+}
+
+
+/* latest news */
+.latest__news-latest-info {
+    padding: 20px 0;
+}
+
+.latest__news-detail {
+    display: inline-block;
+}
+
+.latest__news-date {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.4rem;
+    margin-right: 20px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.latest__news-comment {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.4rem;
+    font-weight: 600;
+}
+
+.latest__news-comment i {
+    margin-right: 5px;
+}
+
+.latest__news-description {
+    font-size: 2rem;
+    color: #010101;
+    line-height: 2.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.latest__news-description:hover {
+    cursor: pointer;
+    color: violet;
+}
+
+.brand {
+    background-color: #f9f9f9;
+
+}
+
+.brand_list {
+    padding: 35px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-item {
+    width: 16.66666667%;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease 0s;
+}
+
+.brand-item:hover img{
+    cursor: pointer;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-font-smoothing: antialiased;
 }
