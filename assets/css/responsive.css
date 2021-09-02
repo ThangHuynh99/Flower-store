@@ -121,4 +121,13 @@
     .brand-item {
         width: 50%;
     }
+
+    /* footer */
+    .footer_area {
+        padding: 0 8px;
+    }
+
+    .footer_author {
+        padding: 0 8px;
+    }
 }

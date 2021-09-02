@@ -470,11 +470,13 @@ body {
     line-height: 2.5rem;
     font-weight: 600;
     margin-top: 0;
+    transition: .2s;
 }
 
 .latest__news-description:hover {
     cursor: pointer;
     color: violet;
+    transition: .2s;
 }
 
 .brand {
@@ -529,6 +531,10 @@ body {
 
 .footer-menu-item {
     display: block;
+}
+
+.footer_about-shop {
+    margin-bottom: 60px;
 }
 
 .footer-menu-item .footer-menu-link {
