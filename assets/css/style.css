@@ -313,26 +313,130 @@ body {
 .new__product-list {
 }
 
-.new__product-item img {
+.new__product-item {
+    margin-bottom: 50px;
+}
+
+.new__product-img {
+    position: relative;
+}
+
+.new__product-img img {
     width: 100%;
     background-position: top center;
     background-size: cover;
+}
+
+.new__product-deal {
+    position: absolute;
+    width: 55px;
+    height: 24px;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    top: 15px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    text-transform: uppercase;
+}
+
+.new__product-item:nth-of-type(even) .new__product-deal {
+    background-color: #e55472;
+}
+
+.new__product-item:nth-of-type(odd) .new__product-deal {
+    background-color: #9ac45c;
+}
+
+/* badge */
+.new__product-badge {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    top: calc(100% - 50px);
+    visibility: hidden;
+    background-color: #666;
+}
+
+.new__product-badge-item {
+    width: 25%;
+    line-height: 50px;
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-left: 1px solid #888;
+    color: white;
+}
+
+.new__product-badge-item:nth-of-type(even) {
+    flex: 1;
+}
+
+.new__product-badge-item:hover {
+    cursor: pointer;
+    background-color: #e55472;
+}
+
+.new__product-img:hover {
+    cursor: pointer;
+}
+
+.new__product-item:hover .new__product-badge {
+    visibility: visible;
+    animation: badge 0.4s linear;
+}
+
+@keyframes badge {
+    from {
+        opacity: 0.5;
+        height: 0px;
+    }
+
+    to {
+        opacity: 1;
+        height: 50px;
+    }
 }
 
 .new__product-item-info {
 }
 
 .new__product-item-name {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 25px;
+    font-weight: 400;
+}
+
+.new__product-item-name:hover {
+    cursor: pointer;
+    color: #e55472;
+    transition: 0.5s;
 }
 
 .new__product-item-price {
-    display: inline-block;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
 .new__product-item-old-price {
     display: inline-block;
+    margin-left: 5px;
 }
 
 .new__product-item-new-price {
     display: inline-block;
+    font-weight: 800;
 }
